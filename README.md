@@ -6,7 +6,8 @@ This repository is a place to document (and discuss) the OpenMessaging specifica
 OpenMessaging is vendor-neutral and language-independent, provides industry guidelines for areas of finance, e-commerce, IoT and big-data, and aimed to develop messaging and streaming applications across heterogeneous systems and platforms.
 
 # Landscape
-![landscape](assets/images/landscape-1.0.0-preview.png)
+
+![landscape-1.0.0-preview.png](assets%2Fimages%2Flandscape-1.0.0-preview.png)
 
 # OpenMessaging
 Please see http://openmessaging.cloud/.

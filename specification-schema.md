@@ -161,7 +161,7 @@ be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
 
 ## OpenMessaging Common UseCases
 
-This document lists the most of common use cases supported by OpenMessaging.
+This document lists the most common use cases supported by OpenMessaging.
  
 1. P2P
 2. Publish/Subscribe
@@ -174,7 +174,7 @@ This document lists the most of common use cases supported by OpenMessaging.
 
 ### P2P
 
-![](/assets/images/use_cases/15078677455707.jpg)
+![Point-to-Point.jpg](assets%2Fimages%2Fuse_cases%2FPoint-to-Point.jpg)
 
 P2P, point to point, the simplest one, in this case, Queue is the only involved resource of OpenMessaging which only has one partition. Simply, Producer send message to Queue, and consumed by Consumer later.
 
@@ -182,28 +182,27 @@ P2P, point to point, the simplest one, in this case, Queue is the only involved 
 
 In this case, Producer send message to Queue with multiple partitions in Round-robin or Hash way. And these partitions will be assigned to consumers who has already subscribed the specified queue regularly.
 
-![](/assets/images/use_cases/15078678095515.jpg)
+![PubSub.jpg](assets%2Fimages%2Fuse_cases%2FPubSub.jpg)
 
 Topic and Routing model also can be imported to this case as shown below, if necessary.
 
-![](/assets/images/use_cases/15078678261228.jpg)
+![Routing.jpg](assets%2Fimages%2Fuse_cases%2FRouting.jpg)
 
 ### Broadcast
 
-![](/assets/images/use_cases/15078678568510.jpg)
+![Broadcast.jpg](assets%2Fimages%2Fuse_cases%2FBroadcast.jpg)
 
 In broadcast case, any message sent to the Queue will be consumed by all consumers.
 
 ### Highway
 
-![](/assets/images/use_cases/15078678981991.jpg)
+![Highway.jpg](assets%2Fimages%2Fuse_cases%2FHighway.jpg)
 
 In highway case, the only focus of SequenceProducer is speed, Producer always want to send abundant and less important messages to Queue. One of the Implementation ways is Batch.
 
 ### Streaming
 
-![](/assets/images/use_cases/15078679330640.jpg)
-
+![Streaming.jpg](assets%2Fimages%2Fuse_cases%2FStreaming.jpg)
 
 StreamingConsumer is for this use case, a stream-oriented consumer, to integrate messaging system with Streaming/BigData related platforms easily. StreamingConsumer supports consume messages from partitions of a specified queue like iterator.
 
@@ -213,23 +212,23 @@ In most cases, original messages can’t arouse the interests of consumers, and 
 
 As shown below, the Routing model of OpenMessaging can be applied to Filter easily. In this case, the message will be routed to Queue through two filter operators, which will keep the message with Student tag and has a property age between 18~23.
 
-![](/assets/images/use_cases/15078679950623.jpg)
+![Filtering.jpg](assets%2Fimages%2Fuse_cases%2FFiltering.jpg)
 
 ### Replication
 
-![](/assets/images/use_cases/15078680221779.jpg)
-
+![Replication.jpg](assets%2Fimages%2Fuse_cases%2FReplication.jpg)
 
 Sometimes, the producers and consumers are distributed among multiple data centers, OpenMessaging provides a simple way to route messages from one region to another region.
 
 ### RPC
 
-![](/assets/images/use_cases/15078681271290.jpg)
+![RPC.jpg](assets%2Fimages%2Fuse_cases%2FRPC.jpg)
 
 In OpenMessaging, RPC is equal to synchronous message, it isn’t traditional CS(Client2Server) model, but CSC(Client2Server2Client) model.
 
 
 ## Appendix 
+
 ### Example of OpenMessaging API
 ```json
 {

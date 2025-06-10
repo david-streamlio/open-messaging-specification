@@ -2,7 +2,7 @@
 
 ## Overview
 
-![](/assets/images/domain-design-1.0.0-preview.png)
+![domain-design-1.0.0-preview.png](assets%2Fimages%2Fdomain-design-1.0.0-preview.png)
 
 Above is the domain architecture of Open Messaging, see JavaDoc for details.
 
@@ -40,7 +40,7 @@ The messages in Topic are original, waiting for processing, which always can't a
 
 So the Routing is in charge of processing the original messages in Topic, and routing to Queue. Each Routing has a operator pipeline, consists of  a series of operators. The messages will flow through the operator pipeline from Topic and Queue.
 
-A  **operator** is used to handle the flowing messages in Routing. There are many kinds of  operator, expression operator, deduplicator operator, joiner operator, filter operator, rpc operator, and so on.
+An **operator** is used to handle the flowing messages in Routing. There are many kinds of  operator, expression operator, deduplicator operator, joiner operator, filter operator, rpc operator, and so on.
 
 What’s more? Routing can cross the network, message can be routed from a network partition to another partition.
 
